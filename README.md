@@ -1,20 +1,29 @@
 # Best Store - E-commerce Web Application
 
-## Overview
+![PHP](https://img.shields.io/badge/PHP-7.4%2B-777BB4?logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-8.0%2B-4479A1?logo=mysql)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5.0%2B-7952B3?logo=bootstrap)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+## 📋 Overview
 Best Store is a modern e-commerce platform where users can register, login, update their profile, and manage their account. It is built using PHP, MySQL, and Bootstrap for responsive design.
 
-## Features
-- User registration and login.
-- Profile management (view and update).
-- Responsive design with Bootstrap.
-- Dynamic copyright year.
+## ✨ Features
+- **User Registration & Login** - Secure account creation and authentication
+- **Profile Management** - View and update personal information
+- **Responsive Design** - Mobile-friendly interface with Bootstrap 5
+- **Dynamic Copyright Year** - Auto-updating footer
+- **Session Management** - Secure authentication system
 
-## Technologies
-- **Frontend**: HTML, CSS, Bootstrap 5.
-- **Backend**: PHP, MySQL.
-- **Others**: Session management for authentication.
+## 🛠️ Technologies
 
-## Installation
+| Layer | Technology |
+|-------|------------|
+| **Frontend** | HTML, CSS, Bootstrap 5 |
+| **Backend** | PHP, MySQL |
+| **Authentication** | Session management |
+
+## 🚀 Installation
 
 ### Prerequisites
 - PHP 7.4 or higher
@@ -22,14 +31,18 @@ Best Store is a modern e-commerce platform where users can register, login, upda
 - Apache or any web server
 
 ### Steps
-1. Clone the repo:
+
+1. **Clone the repository**
    ```bash
    git clone https://github.com/BYUMVUHOREAimable/beststore.git
-   cd best-store
+   cd beststore
+Set up the database
 
-Set up the database:
-
+sql
 CREATE DATABASE best_store;
+
+USE best_store;
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50),
@@ -40,25 +53,26 @@ CREATE TABLE users (
     password VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
+Configure database connection
+Edit tools/db.php with your database credentials.
 
-Configure database connection in tools/db.php.
+Start the server
 
-Start the server:
-
+bash
 php -S localhost:8000
+📖 Usage
+Register: /register.php - Create a new account
 
-Usage
+Login: /login.php - Sign in to your account
 
-Register: /register.php
+Profile: /profile.php - View and edit profile information
 
-Login: /login.php
+Logout: /logout.php - End your session
 
-Profile: /profile.php (Edit profile info)
+📄 License
+MIT License - see the LICENSE file for details.
 
-License
+📞 Contact
+For any questions or support, contact:
 
-MIT License
-
-Contact
-
-For any questions, contact aimablebyumvuhore@gmail.com
+Email: aimablebyumvuhore@gmail.com
