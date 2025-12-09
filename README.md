@@ -36,9 +36,10 @@ Best Store is a modern e-commerce platform where users can register, login, upda
    ```bash
    git clone https://github.com/BYUMVUHOREAimable/beststore.git
    cd beststore
-Set up the database
+   ```
+2. **Set up the database**
 
-sql
+```bash
 CREATE DATABASE best_store;
 
 USE best_store;
@@ -53,12 +54,14 @@ CREATE TABLE users (
     password VARCHAR(255),
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-Configure database connection
-Edit tools/db.php with your database credentials.
+```
 
-Start the server
+3. ***Configure database connection***
+-Edit tools/db.php with your database credentials.**
 
-bash
+-Start the server
+
+```bash
 php -S localhost:8000
 📖 Usage
 Register: /register.php - Create a new account
@@ -71,8 +74,9 @@ Logout: /logout.php - End your session
 
 📄 License
 MIT License - see the LICENSE file for details.
+```
 
-📞 Contact
-For any questions or support, contact:
+***📞 Contact***
+-For any questions or support, contact:
 
-Email: aimablebyumvuhore@gmail.com
+-Email: aimablebyumvuhore@gmail.com
