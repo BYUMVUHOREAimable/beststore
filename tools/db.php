@@ -2,7 +2,7 @@
 function getDatabaseConnection() {
     $servername = "localhost";
     $username = "root";
-    $password = "YourPasswordHere"; // Replace with your actual database password
+    $password = "3Nyamiyaga100%";
     $database = "beststoredb";
 
     // Create connection
